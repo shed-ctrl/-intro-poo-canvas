@@ -3,9 +3,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #333;
+    background-color: #1a73e8; /* Fondo azul */
 }
 
 canvas {
-    border: 2px solid #fff;
+    border: 2px solid #40E0D0; /* Borde cambiado a turquoise en formato hexadecimal */
 }
+

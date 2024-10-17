@@ -79,23 +79,23 @@ class Game {
         this.paddle2 = new Paddle(canvas.width - 10, canvas.height / 2 - 50, 10, 100); // Controlado por la computadora
         this.keys = {}; // Para capturar las teclas
 
-        this.ball2 = new Ball(canvas.width / 2, canvas.height / 2, 5, 3, 3);
-        this.ball3 = new Ball(canvas.width / 2, canvas.height / 2, 2, 2, 2);
-        this.ball4 = new Ball(canvas.width / 2, canvas.height / 2, 15, 1, 1);
-        this.ball5 = new Ball(canvas.width / 2, canvas.height / 2, 20, 4, 2);
+        this.ball2 = new Ball(canvas.width / 2, canvas.height / 5, 8, 6, 9);
+        this.ball3 = new Ball(canvas.width / 2, canvas.height / 5, 5, 7, 5);
+        this.ball4 = new Ball(canvas.width / 2, canvas.height / 5, 20, 4, 6);
+        this.ball5 = new Ball(canvas.width / 2, canvas.height / 5, 25, 8, 8);
 
     }
 
     draw() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        this.ball.draw('blue');
-        this.ball2.draw('orange');
-        this.ball3.draw('white');
+        this.ball.draw('black');
+        this.ball2.draw('Brown');
+        this.ball3.draw('Turquoise');
         this.ball4.draw('cyan');
-        this.ball5.draw('gray');
+        this.ball5.draw('beige');
         
-        this.paddle1.draw('green', 100);
-        this.paddle2.draw('red', 0);
+        this.paddle1.draw('silver', 100);
+        this.paddle2.draw('gold', 0);
     }
 
     update() {
@@ -222,4 +222,4 @@ class Game {
 
 // Crear instancia del juego y ejecutarlo
 const game = new Game();
-game.run();
+game.run();                                                                     
